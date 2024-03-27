@@ -1,15 +1,109 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
-
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
+        System.out.println("Задача 1:");
+        double totalMoney = 0;
+        short moneyPerMount = 15000;
+        int targetMoney = 2459000;
+        int month = 0;
+        double rate = 0;
+        while (totalMoney < targetMoney){
+            rate = (totalMoney / 100) * 1;
+            totalMoney = totalMoney + rate + moneyPerMount;
+            month++;
+            System.out.println("Месяц " + month + ", сумма накоплений равна " + totalMoney + " рублей");
+        }
+        System.out.println("Для накопления суммы " + totalMoney + " рублей понадобилось " + month + " месяцев");
+        System.out.println(" ");
+        System.out.println("Задача 2:");
+        int i = 1;
+        while (i <= 10){
+            System.out.print(i + " ");
+            i++;
+        }
+        System.out.println(" ");
+        i = 10;
+        for (; i >= 1;){
+            System.out.print(i + " ");
+            i--;
+        }
+        System.out.println(" ");
+        System.out.println("Задача 3:");
+        int population = 12000000;
+        int birth = 17;
+        int dead = 8;
+        int birthRate = 0;
+        int deadRate = 0;
+        int populationPerYear = 0;
+        for (int year = 1; year <= 10; year++){
+            birthRate = birth * population/1000;
+            deadRate = dead * population/1000;
+            populationPerYear = birthRate - deadRate;
+            population = population + populationPerYear;
+            System.out.println("Год " + year + ", численность населения составляет " + population);
+        }
+        System.out.println(" ");
+        System.out.println("Задача 4:");
+        int firstDeposit = 15000;
+        double mountsRateDeposit = 0;
+        int targetDeposit = 12000000;
+        double depositNow = firstDeposit;
+        month = 1;
+        while (depositNow < targetDeposit){
+            month++;
+            mountsRateDeposit = (depositNow/100) * 7;
+            depositNow += mountsRateDeposit;
+            System.out.println("Месяц " + month + ", сумма накоплений равна " + depositNow + " рублей");
+        }
+        System.out.println(" ");
+        System.out.println("Задача 5:");
+        firstDeposit = 15000;
+        mountsRateDeposit = 0;
+        targetDeposit = 12000000;
+        depositNow = firstDeposit;
+        month = 1;
+        while (depositNow < targetDeposit) {
+            month++;
+            mountsRateDeposit = (depositNow / 100) * 7;
+            depositNow += mountsRateDeposit;
+            if (month % 6 == 0) {
+                System.out.println("Месяц " + month + ", сумма накоплений равна " + depositNow + " рублей");
+            }
+        }
+        System.out.println(" ");
+        System.out.println("Задача 6:");
+        firstDeposit = 15000;
+        mountsRateDeposit = 0;
+        int targetMonth = 9 * 12;
+        depositNow = firstDeposit;
+        month = 1;
+        while (month < targetMonth) {
+            month++;
+            mountsRateDeposit = (depositNow / 100) * 7;
+            depositNow += mountsRateDeposit;
+            if (month % 6 == 0) {
+                System.out.println("Месяц " + month + ", сумма накоплений равна " + depositNow + " рублей");
+            }
+        }
+        System.out.println(" ");
+        System.out.println("Задача 7:");
+        int firstFriday = 5;
+        int day = firstFriday;
+        while (day <= 31){
+            System.out.println("Сегодня пятница" + day + "-е число. Необходимо подготовить отчет");
+            day = day + 7;
+        }
+        System.out.println(" ");
+        System.out.println("Задача 8:");
+        int totalYear = 0;
+        int yearCometa = 79;
+        int yearNow = 2024;
+        int onePeriadYear = yearNow - 200;
+        int twoPeriodYear = yearNow + 100;
+        while (totalYear < 3000){
+            totalYear += yearCometa;
+            if (totalYear > onePeriadYear && totalYear < twoPeriodYear){
+                System.out.println( totalYear);
+            }
         }
     }
 }
