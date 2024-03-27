@@ -93,6 +93,17 @@ public class Main {
             day = day + 7;
         }
         System.out.println(" ");
-
+        System.out.println("Задача 8:");
+        int totalYear = 0;
+        int yearCometa = 79;
+        int yearNow = 2024;
+        int onePeriadYear = yearNow - 200;
+        int twoPeriodYear = yearNow + 100;
+        while (totalYear < 3000){
+            totalYear += yearCometa;
+            if (totalYear > onePeriadYear && totalYear < twoPeriodYear){
+                System.out.println( totalYear);
+            }
+        }
     }
 }
