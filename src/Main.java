@@ -41,7 +41,20 @@ public class Main {
             population = population + populationPerYear;
             System.out.println("Год " + year + ", численность населения составляет " + population);
         }
+        System.out.println(" ");
+        System.out.println("Задача 4:");
+        int firstDeposit = 15000;
+        double mountsRateDeposit = 0;
+        int targetDeposit = 12000000;
+        double depositNow = firstDeposit;
+        month = 1;
+        while (depositNow < targetDeposit){
+            month++;
+            mountsRateDeposit = (depositNow/100) * 7;
+            depositNow += mountsRateDeposit;
+            System.out.println("Месяц " + month + ", сумма накоплений равна " + depositNow + " рублей");
 
+        }
 
     }
 }
