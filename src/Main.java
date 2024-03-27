@@ -26,5 +26,22 @@ public class Main {
             System.out.print(i + " ");
             i--;
         }
+        System.out.println(" ");
+        System.out.println("Задача 3:");
+        int population = 12000000;
+        int birth = 17;
+        int dead = 8;
+        int birthRate = 0;
+        int deadRate = 0;
+        int populationPerYear = 0;
+        for (int year = 1; year <= 10; year++){
+            birthRate = birth * population/1000;
+            deadRate = dead * population/1000;
+            populationPerYear = birthRate - deadRate;
+            population = population + populationPerYear;
+            System.out.println("Год " + year + ", численность населения составляет " + population);
+        }
+
+
     }
 }
