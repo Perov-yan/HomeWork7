@@ -70,6 +70,20 @@ public class Main {
             }
         }
         System.out.println("");
-
+        System.out.println("Задача 6:");
+        firstDeposit = 15000;
+        mountsRateDeposit = 0;
+        int targetMonth = 9 * 12;
+        depositNow = firstDeposit;
+        month = 1;
+        while (month < targetMonth) {
+            month++;
+            mountsRateDeposit = (depositNow / 100) * 7;
+            depositNow += mountsRateDeposit;
+            if (month % 6 == 0) {
+                System.out.println("Месяц " + month + ", сумма накоплений равна " + depositNow + " рублей");
+            }
+        }
+        System.out.println(" ");
     }
 }
