@@ -69,7 +69,7 @@ public class Main {
                 System.out.println("Месяц " + month + ", сумма накоплений равна " + depositNow + " рублей");
             }
         }
-        System.out.println("");
+        System.out.println(" ");
         System.out.println("Задача 6:");
         firstDeposit = 15000;
         mountsRateDeposit = 0;
@@ -85,5 +85,14 @@ public class Main {
             }
         }
         System.out.println(" ");
+        System.out.println("Задача 7:");
+        int firstfriday = 5;
+        int day = firstfriday;
+        while (day <= 31){
+            System.out.println("Сегодня пятница" + day + "-е число. Необходимо подготовить отчет");
+            day = day + 7;
+        }
+        System.out.println(" ");
+
     }
 }
