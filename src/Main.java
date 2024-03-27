@@ -86,8 +86,8 @@ public class Main {
         }
         System.out.println(" ");
         System.out.println("Задача 7:");
-        int firstfriday = 5;
-        int day = firstfriday;
+        int firstFriday = 5;
+        int day = firstFriday;
         while (day <= 31){
             System.out.println("Сегодня пятница" + day + "-е число. Необходимо подготовить отчет");
             day = day + 7;
